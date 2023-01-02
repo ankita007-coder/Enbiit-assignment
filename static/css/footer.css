@@ -2,7 +2,7 @@ footer{
     bottom: 0;
     display: grid;
     grid-template-columns: 35% 20% 25% 20%;
-    background-color: black;
+    background-color: rgb(16, 14, 14);
     min-height: 50vh;
     color: #eee;
     padding: 30px;
@@ -54,7 +54,15 @@ footer a{
 .subscribe div{
     padding: 5px;
 }
-
+.copyright{
+    width: 100%;
+    padding: 10px;
+    background-color: black;
+}
+.copyright p{
+    text-align: center;
+    color: #eee;
+}
 @media screen and (max-width: 768px) {
     footer{
         grid-template-columns: 100% ;
