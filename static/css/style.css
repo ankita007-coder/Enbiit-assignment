@@ -89,7 +89,7 @@ main{
     border-radius: 10px;
     margin: 10px;
 }
-input[type="search"]{
+input[type="text"]{
     width: 300px;
     border:none;
     outline: none;

@@ -17,17 +17,20 @@
                 <div><a href="index.html">Home</a></div>
                 <div><a href="contact.html">Contact</a></div>
                 <div><a href="gallery.html">Gallery</a></div>
-                <div><input type="search" placeholder="Search..." id="search"><i class="fa fa-search" id="search"></i></div>                
+                <div><input type="text" placeholder="Search..." id="search"><i class="fa fa-search" id="search"></i></div>                
         </div>
         
     </header>
     <div class="login">
-        <form action="" class="login_container">
-            <input type="email" id="" placeholder="Enter your username or email address">
-            <input type="password" name="" id="" placeholder="Enter the password">
-            <button type="submit" class="btn">Login</button>
+        <form action="" class="login_container" onsubmit="return loginValidation()">
+            <input type="email" id="email" placeholder="Enter your username or email address">
+            <p id="email1"></p>
+            <input type="password" name="" id="pass" placeholder="Enter the password">
+            <p id="pass1"></p>
+            <button type="submit" class="btn" id="submit">Login</button>
+            <p id="logged"></p>
             <a href="">Forgot password</a>
-            <p>Trouble logging in? <a href="">Contact us</a></p>
+            <p>Trouble logging in? <a href="contact.html">Contact us</a></p>
             <p>Create a new account! <a href="register.html">Register</a></p>
         </form>      
     </div>
