@@ -86,6 +86,7 @@ a{
     animation: regContainerTransition 1s linear forwards 1.5s;
     color: #eee;
 }
+
 .register_container input{
     width: 50%;
     border: none;
@@ -118,7 +119,7 @@ a{
     justify-content: center;
     align-items: center;
     width: 100%;
-    background-image: radial-gradient(rgba(128, 65, 222, 0.831), white);
+    background-image: radial-gradient(white, rgb(70, 136, 235),rgb(154, 67, 231));
     transform: translateX(-100vw);
     animation: registerTransition 1s linear forwards;
     min-height: 80vh;
@@ -132,14 +133,16 @@ a{
     align-items: center;
     width: 50%;
     border-radius: 5px;
-    background-color: black;
+    background-color: rgb(45, 25, 64);
     padding: 10px;
     box-shadow: 0px 0px 20px rgba(19, 17, 17, 0.674);
     transform: translateY(-100vw) rotateZ(360deg);
     animation: regContainerTransition 1s linear forwards 1.5s;
-    color: #eee;
+    color: rgb(249, 20, 20);
 }
-
+.login_container p{
+    color: rgb(250, 245, 245);
+}
 .login_container input{
     width: 50%;
     border: none;

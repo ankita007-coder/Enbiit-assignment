@@ -5,10 +5,7 @@ footer{
     background-color: black;
     min-height: 50vh;
     color: #eee;
-}
-
-footer div:first-child{
-    padding: 10px;
+    padding: 30px;
 }
 footer div{
     display: flex;
