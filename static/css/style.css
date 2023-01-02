@@ -15,12 +15,12 @@ body{
     transition: all 0.5s;
 }
 
-.nav a{
+.nav a,.icon{
     padding: 10px;
     text-decoration: none;
     color: red;
 }
-.nav a:hover{
+.nav a:hover,.icon:hover{
     color: rgb(221, 198, 243);
     box-shadow: 0 0 10px rgb(97, 96, 96);
     transform: scale(1.1);
@@ -110,8 +110,9 @@ input[type="text"]{
 
 }
 .profile:hover .submenu{
-    top: 60px;
-    right: 100px;
+    position: absolute;
+    top: 80px;
+    right: 80px;
     height: 100px;
     width: 150px;
     background-color: black;
@@ -140,6 +141,76 @@ input[type="text"]{
     box-shadow: 0 0 15px rgb(180, 173, 173);
 }
 
-@keyframes sliderTransition {
+/*megamenu*/
+.megamenu-content{
+    display: none;
+    position: absolute;
+    background-color: black;
+    color: red;
+    width: 100%;
+    left: 0;
+    z-index: 10;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.megamenu:hover .megamenu-content {
+    display: block;
+  }
+  
+.megamenu-content h3,h2{
+    color: #ddd;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
     
+}
+.megamenu-content a{
+    color: #eee;
+    padding: 10px;
+    margin: 10px;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+}
+.column{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+}
+article{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.para{
+    background-color: black;
+    width: 90%;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 20px 0 20px 0;
+    box-shadow: 0 0 20px rgb(3, 3, 3);
+    color: #ddd;
+}
+.para p{
+    letter-spacing: 2px;
+    word-spacing: 6px;
+}
+@media screen and (max-width: 768px) {
+    .nav{
+        flex-wrap: wrap;
+    }
+    .circle{
+        display: none;
+    }
+    .row{
+        flex-wrap: wrap;
+    }
 }

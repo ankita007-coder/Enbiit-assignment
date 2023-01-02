@@ -26,24 +26,56 @@
 </head>
 <body>
     <header>
-    <div class="nav">
-            <div class="logo"><img src="/static/images/logo_.png" alt="" srcset=""></div>   
-            <div><a href="index.html">Home</a></div>
-            <div><a href="contact.html">Contact</a></div>
-            <div><a href="gallery.html">Gallery</a></div>
-            <div><input type="text" placeholder="Search..." ><i class="fa fa-search" id="search"></i></div>
-            <div class="profile">
-                <img src="https://cdn-icons-png.flaticon.com/128/2416/2416666.png" alt="Profile pic">
-                <div class="submenu">
-                    <div><a href="#">Profile</a></div>
-                    <div><a href="#">Logout</a></div>
-                </div>
+    <div class="nav" id="navbar">
+        <div class="logo"><img src="/static/images/logo_.png" alt="" srcset=""></div>   
+        <div><a href="index.html">Home</a></div>
+        <div><a href="contact.html">Contact</a></div>
+        <div><a href="gallery.html">Gallery</a></div>
+        <div><input type="text" placeholder="Search..." ><i class="fa fa-search" id="search"></i></div>
+        <div class="megamenu">
+            <div><a href="">Mega Menu <i class="fa fa-caret-down"></i></a>
+                <div class="megamenu-content">
+                    <div>
+                      <h2>Mega Menu</h2>
+                    </div>
+                    <div class="row">
+                      <div class="column">
+                        <h3>Category 1</h3>
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                      </div>
+                      <div class="column">
+                        <h3>Category 1</h3>
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                      </div>
+                      <div class="column">
+                        <h3>Category 2</h3>
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                      </div>
+                      <div class="column">
+                        <h3>Category 3</h3>
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                      </div>
+                    </div>
+                  </div>
             </div>
-            <div><a href="register.html">Login/Register</a></div>
-            
+        </div>
+        <div class="profile">
+            <img src="https://cdn-icons-png.flaticon.com/128/2416/2416666.png" alt="Profile pic">
+            <div class="submenu">
+                <div><a href="#">Profile</a></div>
+                <div><a href="#">Logout</a></div>
+            </div>
+        </div>
+        <div><a href="register.html">Login/Register</a></div>
     </div>
-    
-    </header>
     <main>
         <!--slider-->
         <div class="slider">
@@ -141,6 +173,19 @@
             </div>
         </div>
     </main>
+    <article>
+        <div class="para">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
+                et dolore magna aliqua. Pretium fusce id velit ut tortor pretium viverra suspendisse. Id consectetur 
+                purus ut faucibus. Tristique et egestas quis ipsum suspendisse ultrices. Posuere urna nec tincidunt 
+                praesent. Gravida neque convallis a cras semper auctor neque vitae tempus. Commodo elit at imperdiet 
+                dui accumsan sit amet. Non odio euismod lacinia at quis risus. Facilisis magna etiam tempor orci. 
+                Vulputate eu scelerisque felis imperdiet. Neque convallis a cras semper auctor neque. Accumsan sit 
+                amet nulla facilisi morbi. Potenti nullam ac tortor vitae purus faucibus ornare suspendisse.
+            </p>
+        </div>
+    </article>
     <!--footer-->
     <footer>
         <div class="">
@@ -157,13 +202,6 @@
             <div><a href="contact.html">Contact</a></div>
             <div><a href="#">FAQ</a></div>
         </div>
-        <div class="social">
-            <h4>Social Media</h4>
-            <div><i class='fa fa-facebook'></i></div>
-            <div><i class='fa fa-instagram'></i></div>
-            <div><i class='fa fa-youtube-square'></i></div>
-            <div><i class='fa fa-linkedin'></i></div>
-        </div>
         <div class="subscribe">
             <h4>Contact Us</h4>
             <div><span><i class="fa fa-envelope"></i>&nbsp;support@enbiit.com</span></div>
@@ -172,7 +210,24 @@
             <div><input type="email" placeholder="Subscribe to our notifications..."></div>
             <div><button class="btn">Subscribe</button></div>  
         </div>
+        <div class="social">
+            <h4>Social Media</h4>
+            <div><i class='fa fa-facebook'></i></div>
+            <div><i class='fa fa-instagram'></i></div>
+            <div><i class='fa fa-youtube-square'></i></div>
+            <div><i class='fa fa-linkedin'></i></div>
+        </div>
     </footer>  
     <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
+    <script src="static/js/index.js"></script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+

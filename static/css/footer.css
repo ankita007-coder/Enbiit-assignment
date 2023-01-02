@@ -1,7 +1,7 @@
 footer{
     bottom: 0;
     display: grid;
-    grid-template-columns: 35% 20% 20% 25%;
+    grid-template-columns: 35% 20% 25% 20%;
     background-color: black;
     min-height: 50vh;
     color: #eee;
@@ -53,4 +53,14 @@ footer a{
 }
 .subscribe div{
     padding: 5px;
+}
+
+@media screen and (max-width: 768px) {
+    footer{
+        grid-template-columns: 100% ;
+    }
+    .social{
+        flex-direction: row;
+        justify-content: space-evenly
+    }
 }

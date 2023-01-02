@@ -38,7 +38,7 @@ function loginValidation(){
         return false;
     }
     if (email=="abc@gmail.com" && password=="1234@_56"){
-        document.getElementById("logged").innerHTML="Logged in successfully";
+        alert("Logged in successfully");
         return true;
     }
     else{
@@ -48,3 +48,5 @@ function loginValidation(){
         return false;
     }
 }
+
+
